@@ -1546,6 +1546,16 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://i-assis.github.io/cv/publication/open/c/</loc>
+         <lastmod>2022-11-29</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://i-assis.github.io/cv/publication/open/mathematica/</loc>
+         <lastmod>2022-11-29</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://i-assis.github.io/cv/publication/open/matlab/</loc>
          <lastmod>2022-11-29</lastmod>
          <changefreq>daily</changefreq>
@@ -1556,7 +1566,17 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://i-assis.github.io/cv/publication/open/python/</loc>
+         <lastmod>2022-11-29</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://i-assis.github.io/cv/publication/open/ruby/</loc>
+         <lastmod>2022-11-29</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://i-assis.github.io/cv/publication/open/solidity/</loc>
          <lastmod>2022-11-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
