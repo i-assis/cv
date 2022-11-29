@@ -31,13 +31,14 @@ _(Feb 2010 - Jul 2016)_
   As a team, we got 3rd best structural design at the [2012 competition](http://saebrasil.org.br/wp-content/uploads/2020/03/AD2012_Pontuacao_Final_-_Classe_Regular.pdf).
 
   - Funded by private companies, [PRG-UFPB](https://www-prg-ufpb-br.translate.goog/prg/contents/menu/sobre-a-prg?_x_tr_sl=pt&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=wapp)
-  and several grants from [CNPq](https://en.wikipedia.org/wiki/National_Council_for_Scientific_and_Technological_Development).
+  and [CNPq](https://en.wikipedia.org/wiki/National_Council_for_Scientific_and_Technological_Development).
 
 ## **Intern** @ [RECOGAS](https://pt-foursquare-com.translate.goog/v/les-recogas/4e9c00572c5b4d6405f3f428?_x_tr_sl=pt&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=wapp)
 
 RECOGAS, _i.e._,
-Brazil North/Northeast Natural Gas Research, ia a multi-university
-initiative dedicated to research into thermal energy systems.
+Brazil North/Northeast Natural Gas Research (RECOGAS),
+is a many-institution initiative dedicated to research
+into thermal energy systems.
 
 _(Jan 2017 - Apr 2022)_
 
@@ -45,3 +46,4 @@ _(Jan 2017 - Apr 2022)_
   H2O/NH3-based cogeneration cycle.
   - Solved several problems in fluid flow/heat transfer using
   generalized integral transforms.
+  - Funded by [CNPq](https://en.wikipedia.org/wiki/National_Council_for_Scientific_and_Technological_Development).
