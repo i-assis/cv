@@ -1,0 +1,8 @@
+title: Publication
+
+arrange:
+    - journalConferencePreprint.md
+    - talks.md
+    - open
+
+collapse: true

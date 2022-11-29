@@ -1,0 +1,15 @@
+title: Tree
+
+arrange:
+  - binary
+  - expression
+  - xor
+  - binarySearch
+  - avl
+  - redBlack
+  - multiWay
+  - generic.md
+  - nAry.md
+  - variations.md
+
+collapse: true

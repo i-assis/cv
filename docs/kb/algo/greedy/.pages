@@ -1,0 +1,10 @@
+title: Greedy
+
+arrange:
+  - strategy.md
+  - alwaysWork.md
+  - implement.md
+  - pros.md
+  - cons.md
+
+collapse: true

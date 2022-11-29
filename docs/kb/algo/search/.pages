@@ -1,0 +1,13 @@
+title: Search
+
+arrange:
+  - linearSequential.md
+  - linearUnordered.md
+  - linearOrderedSorted.md
+  - binary.md
+  - interpolation.md
+  - symbolTable.md
+  - hash.md
+  - string.md
+  
+collapse: true

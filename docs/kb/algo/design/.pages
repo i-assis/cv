@@ -1,0 +1,9 @@
+title: Design
+
+arrange:
+  - classification.md
+  - classificationImplementation.md
+  - classificationDesignMethod.md
+  - classificationOther.md
+
+collapse: true

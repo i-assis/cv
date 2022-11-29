@@ -1,0 +1,20 @@
+title: 🏭 Algorithm
+
+arrange:
+  - index.md
+  - design
+  - complexity
+  - recursion
+  - backtracking
+  - sort
+  - search
+  - select
+  - symbol
+  - hash
+  - string
+  - greedy
+  - divideConquer
+  - dynamic
+  - bitwise
+
+collapse: true

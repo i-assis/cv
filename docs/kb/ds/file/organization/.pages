@@ -1,0 +1,10 @@
+title: Organization
+
+arrange:
+  - index.md
+  - sequence.md
+  - sequenceIndex.md
+  - relative.md
+  - inverted.md
+
+collapse: true

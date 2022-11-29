@@ -1,0 +1,13 @@
+title: Linked
+
+arrange:
+  - adt.md
+  - singly.md
+  - circular.md
+  - doubly.md
+  - doublyEfficient.md
+  - header.md
+  - polynomial.md
+  - unrolled.md
+
+collapse: true

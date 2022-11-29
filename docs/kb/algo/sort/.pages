@@ -1,0 +1,22 @@
+title: Sort
+
+arrange:
+  - classification.md
+  - bubble.md
+  - selection.md
+  - selectionRecursive.md
+  - insertion.md
+  - shell.md
+  - merge.md
+  - heap.md
+  - quick.md
+  - tree.md
+  - linear.md
+  - counting.md
+  - bucketBin.md
+  - radix.md
+  - topological.md
+  - external.md
+  - comparison.md
+
+collapse: true

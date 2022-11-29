@@ -1,0 +1,9 @@
+title: List
+
+arrange:
+  - array
+  - linked
+  - arrayVsLinked.md
+  - skip.md
+
+collapse: true

@@ -1,0 +1,11 @@
+title: Stack
+
+arrange:
+  - adt.md
+  - overflow.md
+  - underflow.md
+  - operation.md
+  - implementAsArray.md
+  - implementAsListLinked.md
+
+collapse: true

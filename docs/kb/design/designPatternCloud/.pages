@@ -1,0 +1,27 @@
+title: Cloud Design Pattern
+
+arrange:
+  - cacheAside.md
+  - circuitBreaker.md
+  - compensatingTransaction.md
+  - competingConsumer.md
+  - computeResourceConsolidation.md
+  - externalConfigurationStore.md
+  - federatedIdentity.md
+  - gatekeeper.md
+  - endpointMonitoring.md
+  - indexTable.md
+  - leaderElection.md
+  - materializedView.md
+  - pipeFilter.md
+  - priorityQueue.md
+  - queueBasedLoadLeveling.md
+  - runtimeReconfiguration.md
+  - schedulerAgentSupervisor.md
+  - sharding.md
+  - staticContentHosting.md
+  - subscriber.md
+  - throttling.md
+  - valetKey.md
+  
+collapse: true

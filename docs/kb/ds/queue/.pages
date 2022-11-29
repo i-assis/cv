@@ -1,0 +1,13 @@
+title: Queue
+
+arrange:
+  - adt.md
+  - implementByArray.md
+  - implementByListLinked.md
+  - operationInsert.md
+  - operationDelete.md
+  - circular.md
+  - priority
+  - doubleEnded.md
+
+collapse: true

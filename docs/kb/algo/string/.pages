@@ -1,0 +1,11 @@
+title: String
+
+arrange:
+  - matching.md
+  - bruteForce.md
+  - matchingRabinKarp.md
+  - matchingAutomata.md
+  - kmp.md
+  - boyerMoore.md
+  
+collapse: true

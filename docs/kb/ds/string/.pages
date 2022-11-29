@@ -1,0 +1,10 @@
+title: String
+
+arrange:
+  - hashTable.md
+  - treeBinarySearch.md
+  - tries.md
+  - treeTernarySearch.md
+  - treeSuffix.md
+
+collapse: true

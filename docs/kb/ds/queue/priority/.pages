@@ -1,0 +1,7 @@
+title: Priority
+
+arrange:
+  - adt.md
+  - implementByListLinked.md
+
+collapse: true

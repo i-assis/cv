@@ -1,0 +1,16 @@
+title: Awesome People
+
+arrange:
+  - controlAnalysis.md
+  - controlLearning.md
+  - controlGame.md
+  - game.md
+  - learning.md
+  - optimization.md
+  - formal.md
+  - information.md
+  - thermo.md
+  - pde.md
+  - googleScholarLabels.md
+
+collapse: true

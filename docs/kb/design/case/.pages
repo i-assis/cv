@@ -1,0 +1,15 @@
+title: Cases
+
+arrange:
+  - algoExpert.md
+  - codeDeploymentSystem.md
+  - stockBroker.md
+  - fbNewsFeed.md
+  - googleDrive.md
+  - redditAPI.md
+  - netflix.md
+  - uberAPI.md
+  - slack.md
+  - airBnB.md
+  
+collapse: true

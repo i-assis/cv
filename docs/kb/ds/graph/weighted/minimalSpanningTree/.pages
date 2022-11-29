@@ -1,0 +1,7 @@
+title: Minimal Spanning Tree
+
+arrange:
+  - prim.md
+  - kruskal.md
+
+collapse: true

@@ -1,0 +1,10 @@
+title: Divide & Conquer
+
+arrange:
+  - strategy.md
+  - alwaysWork.md
+  - pros.md
+  - cons.md
+  - theorem.md
+
+collapse: true

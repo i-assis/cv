@@ -1,0 +1,7 @@
+title: Representation
+
+arrange:
+  - adjacencyMatrix.md
+  - adjacencyList.md
+
+collapse: true

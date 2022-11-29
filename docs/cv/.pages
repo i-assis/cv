@@ -1,0 +1,14 @@
+title: CV
+
+arrange:
+  - experienceDev.md
+  - experienceTeachingResearch.md
+  - experienceEngineering.md
+  - volunteer.md
+  - result.md
+  - education.md
+  - educationExtra.md
+  - language.md
+  - professionalEvents.md
+
+collapse: true

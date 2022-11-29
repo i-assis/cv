@@ -1,0 +1,9 @@
+title: Application
+
+arrange:
+  - polish.md
+  - infixPostfix.md
+  - postfixEvaluation.md
+  - prefixEvaluation.md
+
+collapse: true

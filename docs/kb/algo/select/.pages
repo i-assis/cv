@@ -1,0 +1,9 @@
+title: Select
+
+arrange:
+  - sort.md
+  - partition.md
+  - linear.md
+  - kSmallest.md
+
+collapse: true

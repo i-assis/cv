@@ -1,0 +1,10 @@
+title: Weighted
+
+arrange:
+  - representation.md
+  - modelling.md
+  - minimalSpanningTree
+  - shortestPath.md
+  - app
+
+collapse: true

@@ -1,0 +1,12 @@
+title: Queue
+
+arrange:
+  - adt.md
+  - pros.md
+  - cons.md
+  - fastUnionSlowFind.md
+  - fastUnionQuickFind.md
+  - pathCompression.md
+  - app.md
+
+collapse: true

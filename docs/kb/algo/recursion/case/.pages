@@ -1,0 +1,10 @@
+title: Case
+
+arrange:
+  - twoToTheN.md
+  - xToTheN.md
+  - sumOfFirstN.md
+  - directorySize.md
+  - towerOfHanoi.md
+
+collapse: true

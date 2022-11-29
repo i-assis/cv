@@ -1,0 +1,11 @@
+title: Complexity
+
+arrange:
+  - timePolynomialExponential.md
+  - decisionProblem.md
+  - decisionProcedure.md
+  - class.md
+  - type.md
+  - reduction.md
+
+collapse: true
