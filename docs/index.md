@@ -20,7 +20,7 @@ Questionable, perhaps useful code posted in GitHub/GitLab.
 Taken from courses given/attended by me.\
 Compiled for practical reference.
 
-## [DevKB](https://i-assis.github.io/cv/code)
+## [DevKB](https://i-assis.github.io/cv/kb)
 
 Data structures, algorithms, ICPC-style problems and system design.\
 ML, backend and DevOps engineering.
