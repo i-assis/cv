@@ -1,7 +1,7 @@
 # Dev & Data
 
 [Email](mailto:israel.dynamics@gmail.com) 
-/ [Website](https://i-assis.github.io/home) 
+/ [Website](https://i-assis.github.io/cv) 
 / [LinkedIn](https://www.linkedin.com/in/israel-assis-77105257/) 
 / [GitHub](https://github.com/i-assis/)
 / [GitLab](https://gitlab.com/i-assis/) 
@@ -11,16 +11,16 @@
 
 Startup that produces digital twins of real state assets.
 
-_(Jul Aug 2022)_
+_(Jul - Aug 2022)_
  
   - Mediated between MetaOriginal and companies
   such as [PureWeb](https://www.pureweb.com/), [nVidia Omniverse](https://www.nvidia.com/en-us/omniverse/), etc.
-  - Wrote documentation for a prototype Unreal Engine real-time streaming system.
+  - Tested/documented a prototype Unreal Engine real-time streaming system.
   - **_Tech stack:_** PixelStreaming, Unreal Engine 4.25/4.27/5, GCloud, AWS, Azure
 
 ## **Ruby on Rails Jr. Dev** @ [Original3D](https://www.linkedin.com/company/original-3d/about/)
 
-startup that produces digital twins of real state assets.
+Startup that produces digital twins of real state assets.
 
 _(Oct 2021 - Jan 2022)_
   
@@ -31,12 +31,12 @@ _(Oct 2021 - Jan 2022)_
 
 ## **ThreeJS Dev** @ [Original3D](https://www.linkedin.com/company/original-3d/about/)
 
-startup that produces digital twins of real state assets.
+Startup that produces digital twins of real state assets.
 
 _(Mar 2018 - Sep 2019)_
   
-  - Integrated built-in functionalities of ThreeJS.
-  - Managed to import some 3d models into the browser using ThreeJS.
+  - Coded several ThreeJS MVPs.
+  - Managed to import some 3d models into the DOM using ThreeJS.
   - **_Tech stack:_** NodeJS, ThreeJS, TypeScript 
 
 ## **Backend Jr. Dev** @ [Oxfield](https://www.linkedin.com/company/oxfield/about/)

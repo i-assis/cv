@@ -1,12 +1,12 @@
 site_name: I. Assis
-site_url: https://i-assis.github.io/home/
+site_url: https://i-assis.github.io/cv/
 site_author: I. Assis (israel.dynamics[]gmail.com)
 site_description: Dynamic systems, learning theory.
 copyright: Dynamic systems, learning theory.
 
 # Repository
-repo_name: i-assis/home
-repo_url: https://github.com/i-assis/home/
+repo_name: i-assis/cv
+repo_url: https://github.com/i-assis/cv/
 edit_uri: ""
 
 # https://docs.github.com/en/pages
@@ -42,7 +42,7 @@ theme:
   language: en
   logo: _assets/images/8cell.png
   extra:
-    homepage: https://i-assis.github.io/home/
+    homepage: https://i-assis.github.io/cv/
   favicon: _assets/images/8cell.png
   features:
     - navigation.instant
