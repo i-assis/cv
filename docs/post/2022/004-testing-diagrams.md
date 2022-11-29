@@ -4,7 +4,7 @@ Check [source code](https://raw.githubusercontent.com/i-assis/cv/main/docs/post/
 for any of the diagrams.
 
 Some diagrams may be properly viewed in _light mode_ only.
-_Dark mode_ out-of-the-box is still an issue.
+_Dark mode_ out-of-the-box compatibility is still an issue.
 
 ## Diagrams by MkDocs
 
