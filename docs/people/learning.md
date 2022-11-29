@@ -10,7 +10,7 @@
 
 ---
 
-> **Seth Lloyd** (all ideas interesting, fundamental and information/learning related)
+> **Seth Lloyd** (all ideas interesting and information/learning related)
 > > [Google Scholar *user=mKVcy8sAAAAJ*](https://scholar.google.com/citations?user=mKVcy8sAAAAJ&hl=en)
 
 ---
@@ -22,6 +22,11 @@
 
 > **Shai Shalev-Shwartz** (online learning and convex optimization)
 > > [Google Scholar *user=uYVc9koAAAAJ*](https://scholar.google.com/citations?user=uYVc9koAAAAJ&hl=en)
+
+---
+
+> **Csaba Szepesvari** (bandit framework, sequential decision)
+> > [Google Scholar *user=zvC19mQAAAAJ*](https://scholar.google.com/citations?user=zvC19mQAAAAJ&hl=en)
 
 ---
 

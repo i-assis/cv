@@ -9,7 +9,7 @@ _(Jan 2017 - Apr 2022)_
 
 ## **Ad-hoc Analyst** @ [FE](https://fundacoesespeciais-net-br.translate.goog/?_x_tr_sl=pt&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=wapp)
 
-_(Jan 2021)_
+_(Jan 2021 - permanent)_
 
   - Reviewed maintenance operations of soil drilling machines. 
 

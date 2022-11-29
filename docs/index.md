@@ -11,7 +11,7 @@ Snippets of math and computer science content.
 
 Links to my journal and conference papers.\
 Slides of invited talks.\
-Questionable, perhaps useful code posted in GitHub/GitLab.
+Useful _(possibly..)_ code posted to [GitHub](https://github.com/i-assis?tab=repositories)/[GitLab](https://gitlab.com/i-assis).
 
 ## [CV](https://i-assis.github.io/cv/cv)
 

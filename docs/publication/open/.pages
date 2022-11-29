@@ -4,5 +4,9 @@ arrange:
     - matlab.md
     - node.md
     - ruby.md
+    - c.md
+    - mathematica.md
+    - solidity.md
+
 
 collapse: true

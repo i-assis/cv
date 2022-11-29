@@ -22,7 +22,7 @@ _(Jul - Aug 2022)_
 
 Startup that produces digital twins of real state assets.
 
-_(Oct 2021 - Jan 2022)_
+_(Sep 2021 - Jan 2022)_
   
   - Wrote all accounting/finance-related front/backend code.  
   - Wrote hundreds of pages of software documentation.
@@ -33,19 +33,19 @@ _(Oct 2021 - Jan 2022)_
 
 Startup that produces digital twins of real state assets.
 
-_(Mar 2018 - Sep 2019)_
+_(Jul 2021 - Aug 2021)_
   
   - Coded several ThreeJS MVPs.
-  - Managed to import some 3d models into the DOM using ThreeJS.
+  - Managed to import some 3D models into DOM using ThreeJS.
   - **_Tech stack:_** NodeJS, ThreeJS, TypeScript 
 
 ## **Backend Jr. Dev** @ [Oxfield](https://www.linkedin.com/company/oxfield/about/)
 
 Consulting firm specialized in corporate IT solutions.
 
-_(Sep 2017 - Feb 2018)_
+_(Apr 2021 - Jun 2021)_
 
   - Devised backend architechture: class diagrams, data models.  
-  - Backend implementation.
+  - Backend implementation. Check this [NodeJS/SQL login system](https://github.com/i-assis/nodejs-mysql-handlebars-basic-login-system).
   - **_Tech stack:_** NodeJS, Jest, SQL, ExpressJS, Typescript, Docker
  

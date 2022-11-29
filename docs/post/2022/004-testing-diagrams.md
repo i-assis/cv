@@ -1,5 +1,11 @@
 # Testing diagrams!
 
+Check [source code](https://raw.githubusercontent.com/i-assis/cv/main/docs/post/2022/004-testing-diagrams.md)
+for any of the diagrams.
+
+Some diagrams may be properly viewed in _light mode_ only.
+_Dark mode_ out-of-the-box is still an issue.
+
 ## Diagrams by MkDocs
 
 ### Sequence diagram
@@ -277,7 +283,7 @@ erDiagram
   </body>
 </html>
 
-### C4 Diagram
+### C4 diagram
 
 <html>
   <body>
@@ -303,7 +309,7 @@ erDiagram
   </body>
 </html>
 
-### Git Graph
+### Git graph
 
 <html>
   <body>
@@ -334,7 +340,7 @@ erDiagram
   </body>
 </html>
 
-### Gantt Diagram
+### Gantt diagram
 
 <html>
   <body>
@@ -347,7 +353,7 @@ erDiagram
   </body>
 </html>
 
-### User Journey Diagram
+### User journey diagram
 
 <html>
   <body>
@@ -365,7 +371,7 @@ erDiagram
   </body>
 </html>
 
-### Custom Theme
+### Custom theme
 
 <html>
   <body>
