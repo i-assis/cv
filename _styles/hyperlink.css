@@ -1,0 +1,35 @@
+/* Use system font */
+
+/* 
+@font-face {
+  font-family: "<font>";
+  src: "...";
+}
+*/
+
+/* Use set fonts */
+
+/* 
+:root {
+  --md-text-font: "<font>"; 
+}
+:root {
+  --md-code-font: "<font>";
+}
+*/
+
+ .md-content {
+  --md-typeset-a-color: #09bfdd;
+}
+
+/*
+:root {
+  --md-primary-fg-color:             #000a93;  
+  --md-primary-fg-color--light:      #c62020;
+  --md-accent-fg-color:              #09bfdd;
+  --md-accent-bg-color--light:       #09bfdd;
+  --md-accent-bg-color:              #09bfdd;
+  --md-accent-fg-color:              #09bfdd;
+  --md-accent-fg-color--light:       #09bfdd;
+  --md-accent-fg-color--transparent: #09bfdd;
+} */
