@@ -6,6 +6,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://i-assis.github.io/cv/cv/</loc>
+         <lastmod>2022-11-29</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://i-assis.github.io/cv/cv/education/</loc>
          <lastmod>2022-11-29</lastmod>
          <changefreq>daily</changefreq>
@@ -1416,6 +1421,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://i-assis.github.io/cv/note/</loc>
+         <lastmod>2022-11-29</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://i-assis.github.io/cv/note/computerScience/</loc>
          <lastmod>2022-11-29</lastmod>
          <changefreq>daily</changefreq>
@@ -1427,6 +1437,11 @@
     </url>
     <url>
          <loc>https://i-assis.github.io/cv/note/mechanicalTechnology/</loc>
+         <lastmod>2022-11-29</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://i-assis.github.io/cv/people/</loc>
          <lastmod>2022-11-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -1482,6 +1497,11 @@
     </url>
     <url>
          <loc>https://i-assis.github.io/cv/people/thermo/</loc>
+         <lastmod>2022-11-29</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://i-assis.github.io/cv/post/</loc>
          <lastmod>2022-11-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
