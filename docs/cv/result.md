@@ -43,7 +43,7 @@ _(2013)_
 
 ---
 
-### **3rd Best Structural Design** @ [SAE Brasil Aerodesign](https://www-gov-br.translate.goog/capes/pt-br?_x_tr_sl=pt&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=wapp)
+### **3rd Best Structural Design** @ [SAE Brasil Aerodesign International Competition](https://www-gov-br.translate.goog/capes/pt-br?_x_tr_sl=pt&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=wapp)
 
 _(2012)_
 
@@ -51,7 +51,7 @@ Achieved as member of the [Aerojampa](https://www.instagram.com/aerojampaufpb/) 
 
 ---
 
-### **1st Place InterGEO Olympiad, Math Olympiad Finalist, Top GPA, ...**
+### **1st Place InterGEO Olympiad, Math/Physics Olympiad Finalist, Top GPA, ...**
 
 _(2006, 2007, 2008)_
 
