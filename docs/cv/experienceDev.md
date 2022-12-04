@@ -11,7 +11,7 @@
 
 Startup that produces digital twins of real state assets.
 
-_(Jul - Aug 2022)_
+_(Jul 2022 - Aug 2022)_
  
   - Mediated between MetaOriginal and companies
   such as [PureWeb](https://www.pureweb.com/), [nVidia Omniverse](https://www.nvidia.com/en-us/omniverse/), etc.

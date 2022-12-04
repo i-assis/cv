@@ -11,7 +11,7 @@ _(Jan 2017 - Apr 2022)_
 
 _(Jan 2021 - permanent)_
 
-  - Reviewed maintenance operations of soil drilling machines. 
+  - Reviewed maintenance operations of soil-drilling machines. 
 
 ## **Project Director** @ [AEROJAMPA](https://www.instagram.com/aerojampaufpb/)
 

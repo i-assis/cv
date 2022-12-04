@@ -259,6 +259,6 @@ extra_javascript:
   # markdown-it:
   # - https://cdn.jsdelivr.net/npm/markdown-it-container@3.0.0/
   # Else:
-  - _assets/js/view-bigimg.js
+  - _assets/js/viewBigImg.js
   - _assets/js/extra.js
   

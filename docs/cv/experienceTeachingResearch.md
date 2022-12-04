@@ -2,13 +2,13 @@
 
 ## **Researcher** @ [Unicamp, Dept. of Integrated Systems](https://www-fem-unicamp-br.translate.goog/index.php/pt-br/dsi-sobrenos?_x_tr_sl=pt&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=wapp)
 
-_(Aug 2016 - Mar 2023)_
+_(Aug 2016 - Mar 2023 expected)_
 
   - Reviewed papers published/refereed at the [Lab of System Identification & Control](http://www.fem.unicamp.br/~camino/).
   - Wrote a paper and a dissertation on control of periodic systems.
   - Got Hilbert Number 7.. crazy, right:<br>
       - Hilbert → <span style="color:red"> Courant → Rellich → Cordes → Crandall → Helton → Camino </style> 
-      <span style="color:goldenrod"> → Me </style> 
+      <span style="color:goldenrod"> → Me </style>
 
 ## **Mechatronics Teacher** @ [ESATEC](https://www-esateceducacional-com-br.translate.goog/Cursos/Tecnico_Mecatronica/?_x_tr_sch=http&_x_tr_sl=pt&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=wapp)
 
@@ -61,6 +61,20 @@ _(Sep 2014 - Jun 2016)_
       - Reviewer/writer of class material.
 
   - Only candidate to pass selection with a 10/10.
+
+## **Freelance Teacher**
+
+_(Aug 2016 - permanent)_
+
+  - Taught:
+      - [TOEFL](https://www.ets.org/toefl/test-takers/ibt/about.html) Prep, students did great 
+      - Mechanical Vibrations
+      - Linear Analysis / Control / Signal Processing
+      - Machine Kinematics / Dynamics
+      - Calculus / Physics
+      - Thermodynamics / Heat Transfer
+
+  - Taught from undergrads to college lecturers.
 
 ## **Researcher** @ [Budapest Tech](https://anal.math.bme.hu/?language=en)
 
