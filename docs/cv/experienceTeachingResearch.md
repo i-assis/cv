@@ -60,7 +60,7 @@ _(Sep 2014 - Jun 2016)_
       - Some tutoring.
       - Reviewer/writer of class material.
 
-  - Only candidate to pass selection with a 10/10.
+  - Passed selection with a 10/10 (unprecedented).
 
 ## **Freelance Teacher**
 

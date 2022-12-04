@@ -202,7 +202,10 @@ markdown_extensions:
 extra:
   analytics:
     provider: google
-    property: !ENV GOOGLE_ANALYTICS_KEY
+    property: !ENV [ANALYTICS_KEY_GOOGLE, G-345030999]
+  analytics:
+    provider: google
+    property: !ENV [ANALYTICS_KEY_GOOGLE_UNIVERSAL, UA-250976074-1]
   feedback:
       title: Was this page helpful?
       ratings:
