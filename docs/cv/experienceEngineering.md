@@ -38,8 +38,7 @@ _(Feb 2010 - Jul 2016)_
 RECOGAS, _i.e._,
 Brazil North/Northeast Natural Gas Research (RECOGAS),
 is a [many-institution](https://web-archive-org.translate.goog/web/20080511142231/http://www.les.ufpb.br/recogas/rede_equipe.html?_x_tr_sl=pt&_x_tr_tl=en&_x_tr_hl=en-US&_x_tr_pto=wapp)
-initiative dedicated to research
-into thermal energy systems.
+initiative dedicated to thermal energy systems.
 
 _(Jan 2017 - Apr 2022)_
 
