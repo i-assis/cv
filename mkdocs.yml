@@ -223,12 +223,14 @@ extra:
   social:   
     - icon: fontawesome/brands/google
       link: https://scholar.google.com/citations?hl=en&user=GPu9jbIAAAAJ
-    - icon: fontawesome/brands/scribd
-      link: https://www.scopus.com/authid/detail.uri?authorId=57215007400
     - icon: fontawesome/brands/researchgate
       link: https://www.researchgate.net/profile/Israel-Assis
     - icon: fontawesome/brands/orcid
       link: https://orcid.org/0000-0002-8766-1041
+    - icon: fontawesome/brands/scribd
+      link: https://www.scopus.com/authid/detail.uri?authorId=57215007400
+    - icon: simple/googleanalytics
+      link: https://www.webofscience.com/wos/author/record/AAP-3431-2020
     - icon: fontawesome/brands/github
       link: https://github.com/i-assis
     - icon: fontawesome/brands/gitlab
