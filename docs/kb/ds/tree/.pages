@@ -1,13 +1,13 @@
 title: Tree
 
-arrange:
-  - binary
-  - expression
-  - xor
-  - binarySearch
-  - avl
-  - redBlack
-  - multiWay
+nav:
+  - Binary: 'binary'
+  - Expression: 'expression'
+  - XOR: 'xor'
+  - Binary Search: 'binarySearch'
+  - AVL: 'avl'
+  - Red-Black: 'redBlack'
+  - Multiway: 'multiWay'
   - generic.md
   - nAry.md
   - variations.md
