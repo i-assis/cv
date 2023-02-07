@@ -1,4 +1,6 @@
 .history
 .cache
+.jekyll-cache
 site
+_site
 .env

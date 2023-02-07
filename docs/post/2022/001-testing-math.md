@@ -1,9 +1,4 @@
----
-layout: post
-title: "Testing math!"
-date: 2022-09-03 23:16:30 -0300
-categories: jekyll update
----
+# Testing math!
 
 Random gibberish to check if $\LaTeX$ is redenring well enough.
 
