@@ -1,1 +1,1 @@
-# vs. Greedy vs. Div & Conq
+# vs. Greedy vs. Divide & Conquer
