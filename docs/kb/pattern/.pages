@@ -4,5 +4,6 @@ arrange:
   - creational
   - behavioral
   - structural
+  - other
 
 collapse: true

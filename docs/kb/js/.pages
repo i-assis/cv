@@ -3,5 +3,6 @@ title: 👷 Javascript
 arrange:
   - index.md
   - functional.md
+  - this.md
 
 collapse: true
