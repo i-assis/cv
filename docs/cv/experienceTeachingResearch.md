@@ -6,9 +6,6 @@ _(Aug 2016 - Mar 2023 expected)_
 
   - Reviewed papers published/refereed at the [Lab of System Identification & Control](http://www.fem.unicamp.br/~camino/).
   - Wrote a paper and a dissertation on control of periodic systems.
-  - Got Hilbert Number 7.. crazy, right:<br>
-      - Hilbert → <span style="color:red"> Courant → Rellich → Cordes → Crandall → Helton → Camino </style> 
-      <span style="color:goldenrod"> → Me </style>
 
 ## **Mechatronics Teacher** @ [ESATEC](https://www-esateceducacional-com-br.translate.goog/Cursos/Tecnico_Mecatronica/?_x_tr_sch=http&_x_tr_sl=pt&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=wapp)
 
@@ -60,7 +57,7 @@ _(Sep 2014 - Jun 2016)_
       - Some tutoring.
       - Reviewer/writer of class material.
 
-  - Passed selection with a 10/10 (unprecedented).
+  - Passed selection with a 10/10 (only case).
 
 ## **Freelance Teacher**
 

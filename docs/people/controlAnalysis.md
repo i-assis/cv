@@ -53,3 +53,8 @@
 
 > **Vered Rom-Kedar** (structure analysis of dynamic systems)
 > > [Google Scholar *user=cLgnNzEAAAAJ*](https://scholar.google.com/citations?user=cLgnNzEAAAAJ&hl=en)
+
+---
+
+> **Celso Bottura** (control systems pioneer at [UNICAMP](https://www.unicamp.br/unicamp/noticias/2021/04/12/feec-comemora-50-anos-da-primeira-aula-do-professor-celso-bottura))
+> > [Scopus *authorId=7006731667*](https://www.scopus.com/authid/detail.uri?authorId=7006731667)
