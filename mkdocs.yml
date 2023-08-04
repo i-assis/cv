@@ -150,7 +150,6 @@ markdown_extensions:
   - sane_lists # make better lists
   - smarty: # convert some special characters
       smart_angled_quotes: true
-  - mdx_math # pip install --upgrade python-markdown-math
   #
   # Python Markdown Extensions
   # https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown-extensions/
@@ -197,6 +196,7 @@ markdown_extensions:
       nbsp: true # use \<space> to create &nbsp;
   - pymdownx.progressbar
   - pymdownx.keys # syntax ++ctrl+c++ does not look clear in MD document
+  - mdx_math # math content
 
 # Customization
 extra:

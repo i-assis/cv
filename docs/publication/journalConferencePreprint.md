@@ -2,7 +2,7 @@
 
 :fontawesome-brands-google:
 Google Scholar:
-**[user=GPu9jbIAAAAJ](https://scholar.google.com/citations?hl=en&user=GPu9jbIAAAAJ/)**
+**[user=GPu9jbIAAAAJ](https://scholar.google.com/citations?hl=en&user=GPu9jbIAAAAJ)**
 
 
 :fontawesome-brands-researchgate:
