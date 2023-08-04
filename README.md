@@ -12,8 +12,6 @@ Home page.
 
 > pip install python-markdown-math
 
-> pip install mdx_math
-
 > pip install mkdocs-awesome-pages-plugin
 
 > pip3 install mkdocs-git-revision-date-localized-plugin
