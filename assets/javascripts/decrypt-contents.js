@@ -1,16 +1,7 @@
-/* encryptcontent/decryp-contents.tpl.js */
-
-/* Strips the padding character from decrypted content. */
-function strip_padding(padded_content, padding_char) {
-    for (var i = padded_content.length; i > 0; i--) {
-        if (padded_content[i - 1] !== padding_char) {
-            return padded_content.slice(0, i);
-        }
-    }
-};
+/* encryptcontent/decrypt-contents.tpl.js */
 
 /* Decrypts the content from the ciphertext bundle. */
-function decrypt_content(password, iv_b64, ciphertext_b64, padding_char) {   
+function decrypt_content(password, iv_b64, ciphertext_b64, padding_char) {
     var key = CryptoJS.MD5(password),
         iv = CryptoJS.enc.Base64.parse(iv_b64),
         ciphertext = CryptoJS.enc.Base64.parse(ciphertext_b64),
@@ -21,14 +12,26 @@ function decrypt_content(password, iv_b64, ciphertext_b64, padding_char) {
         };
     var plaintext = CryptoJS.AES.decrypt(bundle, key, {
         iv: iv,
-        padding: CryptoJS.pad.NoPadding
+        padding: CryptoJS.pad.Pkcs7
     });
     try {
-        return strip_padding(plaintext.toString(CryptoJS.enc.Utf8), padding_char);
+        return plaintext.toString(CryptoJS.enc.Utf8)
     } catch (err) {
         // encoding failed; wrong password
         return false;
     }
+};
+
+/* Split cyphertext bundle and try to decrypt it */
+function decrypt_content_from_bundle(password, ciphertext_bundle) {
+    // grab the ciphertext bundle and try to decrypt it
+    if (ciphertext_bundle) {
+        let parts = ciphertext_bundle.split(';');
+        if (parts.length == 3) {
+            return decrypt_content(password, parts[0], parts[1], parts[2]);
+        }
+    }
+    return false;
 };
 
 /* Set key:value with expire time in sessionStorage/localStorage */
@@ -48,62 +51,85 @@ function delItemName(key) {
 
 /* Get key:value from sessionStorage/localStorage */
 function getItemExpiry(key) {
-    var remember_password = sessionStorage.getItem('encryptcontent_' + encodeURIComponent(key));
+    let ret = {
+        value: null,
+        fallback: false
+    };
+    let remember_password;
+    remember_password = sessionStorage.getItem('encryptcontent_' + encodeURIComponent(key));
     if (!remember_password) {
-        // fallback to search default password defined by path
-        var remember_password = sessionStorage.getItem('encryptcontent_' + encodeURIComponent("/"));
+        ret.fallback = true; //fallback is set to not display a "decryption failed" message
+        // fallback one level up
+        let last_slash = key.slice(0, -1).lastIndexOf('/')
+        if (last_slash !== -1 && last_slash > 0) {
+            let keyup = key.substring(0,last_slash+1);
+            remember_password = sessionStorage.getItem('encryptcontent_' + encodeURIComponent(keyup));
+        }
         if (!remember_password) {
-            return null
+            // fallback site_path
+            remember_password = sessionStorage.getItem('encryptcontent_' + encodeURIComponent("cv/"));
+            if (!remember_password) {
+                // fallback global
+                remember_password = sessionStorage.getItem('encryptcontent_');
+                if (!remember_password) {
+                    //no password saved and no fallback found
+                    return null;
+                }
+            }
         }
     }
     const item = JSON.parse(remember_password)
-    const now = new Date()
-    if (now.getTime() > item.expiry) {
-        // if the item is expired, delete the item from storage and return null
-        delItemName(key)
-        return null
+    if (!ret.fallback) { //no need to do this if fallback was used
+        const now = new Date()
+        if (now.getTime() > item.expiry) {
+            // if the item is expired, delete the item from storage and return null
+            delItemName(key);
+            return null;
+        }
     }
-    return decodeURIComponent(item.value)
+    ret.value = decodeURIComponent(item.value);
+    return ret;
 };
 
 /* Reload scripts src after decryption process */
 function reload_js(src) {
-    $('script[src="' + src + '"]').remove();
-    $('<script>').attr('src', src).appendTo('head');
-};
+    let script_src, script_tag, new_script_tag;
+    let head = document.getElementsByTagName('head')[0];
 
-/* Decrypt part of the search index and refresh it for search engine */
-function decrypt_search(password_input, path_location) {
-    sessionIndex = sessionStorage.getItem('encryptcontent-index');
-    if (sessionIndex) {
-        sessionIndex = JSON.parse(sessionIndex);
-        for (var i=0; i < sessionIndex.docs.length; i++) {
-            var doc = sessionIndex.docs[i];
-            if (doc.location.indexOf(path_location) !== -1) {
-                // grab the ciphertext bundle and try to decrypt it
-                var parts = doc.text.split(';');
-                if (parts[0], parts[1], parts[2]) {
-                    var content = decrypt_content(password_input.value, parts[0], parts[1], parts[2]);
-                };
-                if (content) {
-                    doc.text = content;
-                    // any post processing on the decrypted search index should be done here
-                };
+    if (src.startsWith('#')) {
+        script_tag = document.getElementById(src.substr(1));
+        if (script_tag) {
+            script_tag.remove();
+            new_script_tag = document.createElement('script');
+            if (script_tag.innerHTML) {
+                new_script_tag.innerHTML = script_tag.innerHTML;
             }
-        };
-        // force search index reloading on Worker
-        if (!window.Worker) {
-            console.log('Web Worker API not supported');
+            if (script_tag.src) {
+                new_script_tag.src = script_tag.src;
+            }
+            head.appendChild(new_script_tag);
+        }
+    } else {
+        if (base_url == '.') {
+            script_src = src;
         } else {
-            sessionIndex = JSON.stringify(sessionIndex);
-            sessionStorage.setItem('encryptcontent-index', sessionIndex);
-            searchWorker.postMessage({init: true, sessionIndex: sessionIndex});
-        };
+            script_src = base_url + '/' + src;
+        }
+
+        script_tag = document.querySelector('script[src="' + script_src + '"]');
+        if (script_tag) {
+            script_tag.remove();
+            new_script_tag = document.createElement('script');
+            new_script_tag.src = script_src;
+            head.appendChild(new_script_tag);
+        }
     }
 };
 
+
+
 /* Decrypt speficique html entry from mkdocs configuration */
-function decrypt_somethings(password_input, encrypted_something) {
+function decrypt_somethings(password_value, encrypted_something) {
     var html_item = '';
     for (const [name, tag] of Object.entries(encrypted_something)) {
         if (tag[1] == 'id') {
@@ -113,36 +139,27 @@ function decrypt_somethings(password_input, encrypted_something) {
         } else {
             console.log('WARNING: Unknow tag html found, check "encrypted_something" configuration.');
         }
-        if (html_item) {
+        if (html_item[0]) {
             for (i = 0; i < html_item.length; i++) {
                 // grab the cipher bundle if something exist
-                if (html_item[i]) {
-                    var parts = html_item[i].innerHTML.split(';');
-                    // decrypt it
-                    if (parts[0], parts[1], parts[2]) {
-                        var content = decrypt_content(password_input.value, parts[0], parts[1], parts[2]);
-                    };
-                    if (content) {
-                        // success; display the decrypted content
-                        html_item[i].innerHTML = content;
-                        html_item[i].style.display = null;
-                        // any post processing on the decrypted content should be done here
-                    };
+                let content = decrypt_content_from_bundle(password_value, html_item[i].innerHTML);
+                if (content !== false) {
+                    // success; display the decrypted content
+                    html_item[i].innerHTML = content;
+                    html_item[i].style.display = null;
+                    // any post processing on the decrypted content should be done here
                 }
             }
         }
     }
 };
 
-/* Decrypt content a page */
+/* Decrypt content of a page */
 function decrypt_action(password_input, encrypted_content, decrypted_content) {
     // grab the ciphertext bundle
-    var parts = encrypted_content.innerHTML.split(';');
-    // decrypt it
-    var content = decrypt_content(
-        password_input.value, parts[0], parts[1], parts[2]
-    );
-    if (content) {
+    // and decrypt it
+    let content = decrypt_content_from_bundle(password_input.value, encrypted_content.innerHTML);
+    if (content !== false) {
         // success; display the decrypted content
         decrypted_content.innerHTML = content;
         // encrypted_content.parentNode.removeChild(encrypted_content);
@@ -156,95 +173,84 @@ function decrypt_action(password_input, encrypted_content, decrypted_content) {
         }
         return true
     } else {
-        // create HTML element for the inform message
-        var decrypt_msg = document.createElement('p');
-        decrypt_msg.setAttribute('id', 'mkdocs-decrypt-msg');
-        var node = document.createTextNode('Invalid password.');
-        decrypt_msg.appendChild(node);
-        var mkdocs_decrypt_msg = document.getElementById('mkdocs-decrypt-msg');
-        // clear all previous failure messages
-        while (mkdocs_decrypt_msg.firstChild) {
-            mkdocs_decrypt_msg.firstChild.remove();
-        }
-        mkdocs_decrypt_msg.appendChild(decrypt_msg);
-        password_input.value = '';
-        password_input.focus();
         return false
     }
 };
 
+function decryptor_reaction(content_decrypted, password_input, fallback_used, set_global, save_cookie) {
+    let location_path;
+    if (set_global) {
+        location_path = "/cv/"; //global password decrypts at "/{site_path}"
+    } else {
+        location_path = encryptcontent_path;
+    }
+    if (content_decrypted) {
+        // keep password value on sessionStorage/localStorage with specific path (relative)
+        if (set_global) {
+            setItemExpiry("", password_input.value, 1000*3600*24);
+        }
+        else if (!fallback_used) {
+            setItemExpiry(location_path, password_input.value, 1000*3600*24);
+        }
+        // continue to decrypt others parts
+        
+        
+    } else {
+        // remove item on sessionStorage/localStorage if decryption process fail (Invalid item)
+        if (!fallback_used || set_global) {
+            // create HTML element for the inform message
+            let mkdocs_decrypt_msg = document.getElementById('mkdocs-decrypt-msg');
+            mkdocs_decrypt_msg.textContent = decryption_failure_message;
+            delItemName(location_path);
+        }
+        password_input.value = '';
+        password_input.focus();
+    }
+}
+
 /* Trigger decryption process */
 function init_decryptor() {
-    var password_input = document.getElementById('mkdocs-content-password'),
-        encrypted_content = document.getElementById('mkdocs-encrypted-content'),
-        decrypted_content = document.getElementById('mkdocs-decrypted-content'),
-        decrypt_button = document.getElementById("mkdocs-decrypt-button"),
-        decrypt_form = document.getElementById('mkdocs-decrypt-form');
+    var password_input = document.getElementById('mkdocs-content-password');
     // adjust password field width to placeholder length
-    let input = document.getElementById("mkdocs-content-password");
-    input.setAttribute('size', input.getAttribute('placeholder').length);
-    
-
+    if (password_input.hasAttribute('placeholder')) {
+        password_input.setAttribute('size', password_input.getAttribute('placeholder').length);
+    }
+    var encrypted_content = document.getElementById('mkdocs-encrypted-content');
+    var decrypted_content = document.getElementById('mkdocs-decrypted-content');
     /* If remember_password is set, try to use sessionStorage/localstorage item to decrypt content when page is loaded */
-    var password_cookie = getItemExpiry(window.location.pathname);
+    let password_cookie = getItemExpiry(encryptcontent_path);
     if (password_cookie) {
-        password_input.value = password_cookie;
-        var content_decrypted = decrypt_action(
+        password_input.value = password_cookie.value;
+        let content_decrypted = decrypt_action(
             password_input, encrypted_content, decrypted_content
         );
-        if (content_decrypted) {
-            // continue to decrypt others parts
-            
-            
-        } else {
-            // remove item on sessionStorage/localStorage if decryption process fail (Invalid item)
-            delItemName(window.location.pathname)
-        }
-    };
-
+        decryptor_reaction(content_decrypted, password_input, password_cookie.fallback, false, false); //dont save cookie as it was loaded from cookie
+    }
     /* If password_button is set, try decrypt content when button is press */
+    let decrypt_button = document.getElementById("mkdocs-decrypt-button");
     if (decrypt_button) {
         decrypt_button.onclick = function(event) {
             event.preventDefault();
-            var content_decrypted = decrypt_action(
+            let content_decrypted = decrypt_action(
                 password_input, encrypted_content, decrypted_content
             );
-            if (content_decrypted) {
-                // keep password value on sessionStorage/localStorage with specific path (relative)
-                setItemExpiry(document.location.pathname, password_input.value, 1000*3600*24);
-                // continue to decrypt others parts
-                
-                
-            } else {
-                // TODO ?
-            };
+            decryptor_reaction(content_decrypted, password_input, false, false, true); //no fallback, save cookie
         };
     }
-
     /* Default, try decrypt content when key (ctrl) enter is press */
     password_input.addEventListener('keypress', function(event) {
+        let set_global = false;
         if (event.key === "Enter") {
-            var location_path = document.location.pathname;
-            var is_global = false;
-            if (event.ctrlKey) { 
-                var location_path = "/";
-                var is_global = true;
-            };
+            if (event.ctrlKey) {
+                set_global = true;
+            }
             event.preventDefault();
-            var content_decrypted = decrypt_action(
+            let content_decrypted = decrypt_action(
                 password_input, encrypted_content, decrypted_content
             );
-            if (content_decrypted) {
-                // keep password value on sessionStorage/localStorage with specific path (relative)
-                setItemExpiry(location_path, password_input.value, 1000*3600*24);
-                // continue to decrypt others parts
-                
-                
-            } else {
-                // TODO ?
-            };
+            decryptor_reaction(content_decrypted, password_input, false, set_global, true); //no fallback, set_global?, save cookie
         }
     });
-};
+}
 
 document.addEventListener('DOMContentLoaded', init_decryptor());
